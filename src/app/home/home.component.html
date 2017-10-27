@@ -1,0 +1,12 @@
+<div class="row">
+  <app-breadcrumb class="col" [taxonomies]="taxonomies$ | async"></app-breadcrumb>
+</div>
+<div class="row">
+  <div class="col-3 d-none d-md-block">
+    <app-taxons [taxonomies]="taxonomies$ | async"></app-taxons>
+  </div>
+  <div class="col-12 col-md-9">
+    <app-content [products]="products$ | async" [taxonIds]="selectedTaxonIds$ | async">
+    </app-content>
+  </div>
+</div>

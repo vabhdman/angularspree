@@ -8,9 +8,6 @@
     src: url("assets/WhitneyHTF-Book.woff") format("woff")
 }
 
-// bootstrap fonts
-$icon-font-path: "../node_modules/bootstrap-sass/assets/fonts/bootstrap/";
-
 @import "app/shared/scss/themes";
 @import "app/shared/scss/custom_bootstrap";
 @import url('../node_modules/font-awesome/css/font-awesome.min.css');
