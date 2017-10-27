@@ -1,13 +1,14 @@
 .bread_crumb {
   color: red;
   position: relative;
-  margin: 25px 0;
+  margin: 2rem 0 3rem;
+  padding: 0;
   font-size: 13px;
   background-color: white !important;
   li {
     font-size: 13px;
-    display: inline-block;
     float: left;
+    display: inline-block;
     margin-right: 5px;
     color: #696b79;
     text-transform: capitalize;

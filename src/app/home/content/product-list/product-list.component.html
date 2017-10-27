@@ -1,8 +1,8 @@
-<div class="row justify-content-center">
-  <section>
-    <ul class="results-base">
+<div class="row">
+  <section class="col">
+    <ul class="results-base row">
       <p *ngIf="products.length === 0">No Products found for this category</p>
-      <li *ngFor="let product of products | filter : selectedTaxonIds" class="product-base" [style.margin]="getMargin()" itemscope
+      <li *ngFor="let product of products | filter : selectedTaxonIds" class="product-base col-2 col-sm-4 col-lg-3" [style.margin]="getMargin()" itemscope
         itemtype="https://schema.org/Product">
         <div class="product-thumbShim"></div>
         <a itemprop="url" [routerLink]="['/product/', product.slug]">
@@ -25,7 +25,7 @@
             <!-- Product Size --><!--<div class="product-sizes">Sizes: S, M, L, XL, XXL</div>-->
           </div>
         </a>
-        <div class="product-sizeDisplayDiv">
+        <!-- <div class="product-sizeDisplayDiv">
           <div class="product-sizeDisplayHeader">
             <span>Select a size</span>
             <span class="myntraweb-sprite product-sizeDisplayRemoveMark sprites-remove"></span>
@@ -37,7 +37,7 @@
             <button class="product-sizeButton">XL</button>
             <button class="product-sizeButton">XXL</button>
           </div>
-        </div>
+        </div> -->
         <div class="product-actions">
           <span class="product-actionsButton product-wishlist coming-soon">save</span>
           <span class="product-actionsButton product-addToBag">

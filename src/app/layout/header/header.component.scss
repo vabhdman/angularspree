@@ -1,37 +1,10 @@
 :host {
   display: block;
   background-color: white;
-  height: 70px;
-  padding: 7px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
 }
 
 nav {
-  padding: 0.5rem 0;
-
-  .navbar-brand, .navbar-toggler  {
-    z-index: 2000;
-    padding: 0;
-    img {
-      height: 46px;
-    }
-  }
-
-  .navbar-toggler {
-    border: none;
-    outline: none;
-    cursor: pointer;
-  }
-
-  .nav-item {
-    transition: all 500ms ease-in-out;
-    font-size: 0.8rem;
-    margin-left: 1rem;
-    border-bottom: 2px solid white;;
-    &:hover, &.active {
-      border-bottom: 2px solid #21C1BD;
-    }
-  }
-
   .btn-group {
     /deep/ .dropdown-menu {
       left: 0 !important;

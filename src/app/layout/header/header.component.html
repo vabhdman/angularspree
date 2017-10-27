@@ -1,4 +1,4 @@
-<div class="row border border-top-0 border-left-0 border-right-0 border-light">
+<div class="row">
   <div class="col-md-12">
     <nav class="navbar navbar-expand-lg navbar-light bg-white justify-content-between">
       <div class="container">
@@ -11,7 +11,7 @@
           </button>
           <ul *dropdownMenu class="dropdown-menu" role="menu">
             <li *ngFor="let taxon of taxonList" class="nav-item">
-              <a class="nav-link h5" (click)="selectTaxon(taxon)" href="javascript:void(0)">
+              <a class="nav-link" (click)="selectTaxon(taxon)" href="javascript:void(0)">
                 {{taxon.name}}
               </a>
             </li>
@@ -20,8 +20,8 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mr-auto">
             <li *ngFor="let taxon of taxonList" class="nav-item">
-              <a class="nav-link h5" (click)="selectTaxon(taxon)" href="javascript:void(0)">
-                {{taxon.name}}
+              <a class="nav-link" (click)="selectTaxon(taxon)" href="javascript:void(0)">
+                <strong>{{taxon.name}}</strong>
               </a>
             </li>
           </ul>
